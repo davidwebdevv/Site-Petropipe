@@ -135,12 +135,17 @@ export default function Header() {
             {/* Logo: substitua '/images/logo.png' pelo caminho da sua imagem em public/ */}
             <div className="flex items-center">
               <Link href="/" className="inline-block">
+                {/*
+                  Exibe a versão do logo dependendo do estado do header.
+                  - Quando estiver no topo (header escuro) mostramos a versão clara do logo
+                  - Quando rolar a página (header branco) mostramos a versão escura do logo
+                */}
                 <Image
-                  src="/images/logo.png"
+                  src={isScrolled ? "/images/logo-dark.svg" : "/images/logo-light.svg"}
                   alt="Petropipe"
                   width={160}
                   height={40}
-                  className="object-contain"
+                  className="object-contain transition-opacity duration-200"
                 />
               </Link>
             </div>

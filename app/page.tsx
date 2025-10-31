@@ -15,7 +15,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card Tubos */}
-            <div className="bg-blue-900/10 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-blue-900/20">
+            <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100">
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Tubos de Aço Inox
@@ -46,13 +46,13 @@ export default function Home() {
             </div>
 
             {/* Card Conexões */}
-            <div className="bg-blue-900/10 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-blue-900/20">
+            <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100">
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Conexões
                 </h3>
                 <p className="text-gray-600">
-                  Conexões sanitárias, cotovelos, tês e outras peças em aço inox
+                  Conexões , cotovelos, tês e outras peças em aço inox
                 </p>
                 <a
                   href="/produtos/conexoes"
@@ -77,7 +77,7 @@ export default function Home() {
             </div>
 
             {/* Card Válvulas */}
-            <div className="bg-blue-900/10 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-blue-900/20">
+            <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100">
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Válvulas

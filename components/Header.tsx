@@ -89,22 +89,37 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
-          {/* Left: Corporate menu + Logo */}
-          <div className="flex-shrink-0 flex items-center space-x-4">
-            {/* Corporate menu (desktop hover) */}
+          {/* Left: Logo */}
+          <div className="flex-shrink-0 flex items-center">
+            <Link href="/" className="inline-block">
+              <Image
+                src="/images/logo5.png"
+                alt="Petropipe"
+                width={160}
+                height={40}
+                className="object-contain"
+              />
+            </Link>
+          </div>
+
+          {/* Desktop Menu */}
+          <nav className="hidden md:flex space-x-8 items-center">
+            {/* Corporate menu */}
             <div
-              className="relative hidden md:block"
+              className="relative"
               onMouseEnter={handleCorpMouseEnter}
               onMouseLeave={handleCorpMouseLeave}
             >
-              <button className={`px-3 py-2 ${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"}`}>
+              <button className={`group relative inline-flex items-center transition-colors duration-200
+                ${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"}`}>
                 Empresa
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-200" />
               </button>
               {isCorpOpen && (
-                <div className="absolute left-0 mt-2 w-72 bg-white border rounded-md shadow-lg z-50">
+                <div className="absolute left-0 mt-2 w-72 bg-white/95 backdrop-blur-sm border rounded-md shadow-lg z-50 animate-in fade-in slide-in-from-top-2 duration-200">
                   <ul className="py-2">
                     <li>
-                      <Link href="/sobre-a-Petropipe" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sobre a Petropipe</Link>
+                      <Link href="/sobre-a-petropipe" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sobre a Petropipe</Link>
                     </li>
                     <li>
                       <Link href="/unidades" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Unidades</Link>
@@ -132,22 +147,7 @@ export default function Header() {
               )}
             </div>
 
-            {/* Logo: substitua '/images/logo.png' pelo caminho da sua imagem em public/ */}
-            <div className="flex items-center">
-              <Link href="/" className="inline-block">
-                <Image
-                  src="/images/logo.png"
-                  alt="Petropipe"
-                  width={160}
-                  height={40}
-                  className="object-contain"
-                />
-              </Link>
-            </div>
-          </div>
-
-          {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-8 items-center">
+            {/* Products menu */}
             <div
               className="relative"
               onMouseEnter={handleProductsMouseEnter}

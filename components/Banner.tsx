@@ -7,7 +7,7 @@ export default function Banner() {
   const images: string[] = [
     "/images/banner/slide1.jpg",
     "/images/banner/slide2.jpg",
-    "/images/banner/slide3.jpg",
+    "/images/banner/slide3.png",
   ];
 
   const [index, setIndex] = useState(0);
@@ -86,7 +86,7 @@ export default function Banner() {
         }
         touchStartX.current = null;
       }}
-      className="relative h-[600px] mt-20 overflow-hidden"
+      className="relative h-[600px] mt-28 pt-6 overflow-hidden before:absolute before:inset-x-0 before:top-0 before:h-12 before:bg-gradient-to-b before:from-gray-900/10 before:via-gray-900/5 before:to-transparent before:z-10"
     >
       {/* Slides */}
       {images.map((src, i) => (
@@ -133,10 +133,10 @@ export default function Banner() {
           Tubos e conexões de alta qualidade para suas necessidades industriais.
           Produtos certificados e com garantia de durabilidade.
         </p>
-        <div className="mt-10">
+        <div className="mt-16 sm:mt-20">
           <a
             href="/produtos"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-slate-800 hover:bg-slate-700 transition-colors duration-200"
           >
             Conheça Nossos Produtos
           </a>

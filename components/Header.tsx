@@ -83,8 +83,8 @@ export default function Header() {
     <header 
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? "bg-gradient-to-r from-white to-[#0b5fff] backdrop-blur-sm shadow-lg" 
-          : "bg-gray-900"
+          ? "bg-white/95 backdrop-blur-sm shadow-lg" 
+          : "bg-gradient-to-r from-white to-gray-900"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -242,7 +242,7 @@ export default function Header() {
           <div 
             ref={menuRef}
             className={`md:hidden fixed inset-x-0 top-20 p-4 
-              ${isScrolled ? "bg-gradient-to-r from-white to-[#0b5fff]" : "bg-gray-900"} 
+              ${isScrolled ? "bg-white/95" : "bg-gradient-to-r from-white to-gray-900"} 
               backdrop-blur-sm border-t border-gray-200/20 animate-in slide-in-from-top duration-200`}
           >
             <div className="pt-2 pb-3 space-y-1">

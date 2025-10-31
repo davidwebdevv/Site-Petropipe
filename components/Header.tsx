@@ -83,7 +83,7 @@ export default function Header() {
     <header 
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? "bg-white/95 backdrop-blur-sm shadow-lg" 
+          ? "bg-gradient-to-r from-white to-[#0b5fff] backdrop-blur-sm shadow-lg" 
           : "bg-gray-900"
       }`}
     >
@@ -135,17 +135,12 @@ export default function Header() {
             {/* Logo: substitua '/images/logo.png' pelo caminho da sua imagem em public/ */}
             <div className="flex items-center">
               <Link href="/" className="inline-block">
-                {/*
-                  Exibe a versão do logo dependendo do estado do header.
-                  - Quando estiver no topo (header escuro) mostramos a versão clara do logo
-                  - Quando rolar a página (header branco) mostramos a versão escura do logo
-                */}
                 <Image
-                  src={isScrolled ? "/images/logo-dark.svg" : "/images/logo-light.svg"}
+                  src="/images/logo.png"
                   alt="Petropipe"
                   width={160}
                   height={40}
-                  className="object-contain transition-opacity duration-200"
+                  className="object-contain"
                 />
               </Link>
             </div>
@@ -247,7 +242,7 @@ export default function Header() {
           <div 
             ref={menuRef}
             className={`md:hidden fixed inset-x-0 top-20 p-4 
-              ${isScrolled ? "bg-white/95" : "bg-gray-900"} 
+              ${isScrolled ? "bg-gradient-to-r from-white to-[#0b5fff]" : "bg-gray-900"} 
               backdrop-blur-sm border-t border-gray-200/20 animate-in slide-in-from-top duration-200`}
           >
             <div className="pt-2 pb-3 space-y-1">

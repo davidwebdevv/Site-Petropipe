@@ -171,18 +171,18 @@ export default function Header() {
                 >
                   <ul className="py-2">
                     <li>
-                      <Link href="/produtos/tubos" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                        Tubos
+                      <Link href="/produtos/Tubos&Tubing" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                        Tubos & Tubing
                       </Link>
                     </li>
                     <li>
-                      <Link href="/produtos/conexoes" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                      <Link href="/produtos/Conexoes" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
                         Conexões
                       </Link>
                     </li>
                     <li>
-                      <Link href="/produtos/valvulas" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                        Válvulas
+                      <Link href="/produtos/Flanges" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                        Flanges
                       </Link>
                     </li>
                   </ul>
@@ -268,7 +268,7 @@ export default function Header() {
 
                 {isCorpMobileOpen && (
                   <div className="pl-4 animate-in slide-in-from-left duration-200">
-                    <Link href="/sobre-a-acotubo" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Sobre a Petropipe</Link>
+                    <Link href="/sobre-a-petropipe" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Sobre a Petropipe</Link>
                     <Link href="/unidades" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Unidades</Link>
                     <Link href="/qualidade" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Qualidade</Link>
                     <Link href="/planos-de-financiamento" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Planos de Financiamento</Link>
@@ -298,9 +298,9 @@ export default function Header() {
 
                 {isProductsOpen && (
                   <div className="pl-4">
-                    <Link href="/produtos/tubos" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Tubos</Link>
-                    <Link href="/produtos/conexoes" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Conexões</Link>
-                    <Link href="/produtos/valvulas" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Válvulas</Link>
+                    <Link href="/produtos/Tubos&Tubing" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Tubos</Link>
+                    <Link href="/produtos/Conexoes" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Conexões</Link>
+                    <Link href="/produtos/Flanges" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Válvulas</Link>
                   </div>
                 )}
               </div>

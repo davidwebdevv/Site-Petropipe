@@ -16,17 +16,17 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Produtos</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/produtos/tubos" className="text-gray-400 hover:text-white">
+                <a href="/produtos/Tubos&Tubing" className="text-gray-400 hover:text-white">
                   Tubos de Aço Inox
                 </a>
               </li>
               <li>
-                <a href="/produtos/conexoes" className="text-gray-400 hover:text-white">
+                <a href="/produtos/Conexoes" className="text-gray-400 hover:text-white">
                   Conexões
                 </a>
               </li>
               <li>
-                <a href="/produtos/valvulas" className="text-gray-400 hover:text-white">
+                <a href="/produtos/Flanges" className="text-gray-400 hover:text-white">
                   Válvulas
                 </a>
               </li>

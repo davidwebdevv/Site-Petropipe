@@ -18,13 +18,16 @@ export default function Home() {
             <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100">
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Tubos de Aço Inox
+                  TUBOS & TUBING
                 </h3>
                 <p className="text-gray-600">
-                  Tubos em diversos diâmetros e espessuras para diferentes aplicações
+                  Diâmetros conforme solicitação do projeto e
+                  normas especificadas, com e sem costura,
+                  espessuras e diâmetros tradicionais como
+                  também especiais.
                 </p>
                 <a
-                  href="/produtos/tubos"
+                  href="/produtos/Tubos&Tubing"
                   className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-700"
                 >
                   Ver produtos
@@ -49,13 +52,15 @@ export default function Home() {
             <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100">
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Conexões
+                  CONEXÕES
                 </h3>
                 <p className="text-gray-600">
-                  Conexões , cotovelos, tês e outras peças em aço inox
+                  Curvas, Tes, Reduções Concêntricas e Excêntricas, Tampões e Peças Especiais, com e sem
+                  costura, espessuras e diâmetros tradicionais
+                  como também especiais.
                 </p>
                 <a
-                  href="/produtos/conexoes"
+                  href="/produtos/Conexoes"
                   className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-700"
                 >
                   Ver produtos
@@ -80,13 +85,16 @@ export default function Home() {
             <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100">
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Válvulas
+                 FLANGES
                 </h3>
                 <p className="text-gray-600">
-                  Válvulas de diferentes tipos para controle de fluxo em sistemas industriais
+                  Flanges Pescoço, Cego, Roscado, Sobreposto,
+                  Encaixe e conforme desenho. Peças em
+                  dimensões e libragem tradicionais ou
+                  especiais.
                 </p>
                 <a
-                  href="/produtos/valvulas"
+                  href="/produtos/Flanges"
                   className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-700"
                 >
                   Ver produtos

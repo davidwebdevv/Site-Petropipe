@@ -18,10 +18,10 @@ const tubosProdutos = [
     specifications: [
       'Diâmetro: 1/2" a 4"',
       'Schedule: 10S a 40S',
-      'Acabamento: Polido Sanitário',
+      'Acabamento: Polido ',
       'Norma: ASTM A269'
     ],
-    imageUrl: '/images/produtos/tubo-316l.jpg'
+    imageUrl: '/images/produtos/tubo-304.jpg'
   },
   {
     name: 'Tubo Aço Inox 321',
@@ -32,7 +32,7 @@ const tubosProdutos = [
       'Acabamento: Natural',
       'Norma: ASTM A312'
     ],
-    imageUrl: '/images/produtos/tubo-321.jpg'
+    imageUrl: '/images/produtos/tubo-304.jpg'
   }
 ];
 

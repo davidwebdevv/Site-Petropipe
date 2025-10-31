@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Petropipe - Tubos e Conexões em Aço Inox",
-  description: "Fornecedor especializado em tubos e conexões de aço inox para aplicações industriais",
+  description: "Fornecedor especializado em Tubos e conexões e Flanges",
 };
 
 export default function RootLayout({

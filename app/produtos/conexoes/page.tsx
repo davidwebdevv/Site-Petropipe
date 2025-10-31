@@ -8,20 +8,20 @@ const conexoesProdutos = [
       'Material: Aço Inox 304/316L',
       'Diâmetro: 1/2" a 4"',
       'Acabamento: Polido',
-      'Tipo: Sanitário/Industrial'
+      'Tipo: Industrial'
     ],
     imageUrl: '/images/produtos/cotovelo-90.jpg'
   },
   {
-    name: 'Tê Sanitário',
-    description: 'Tê sanitário em aço inox para indústria alimentícia e farmacêutica',
+    name: 'Tê ',
+    description: 'Tê  em aço inox para indústria Petrolifera',
     specifications: [
       'Material: Aço Inox 316L',
       'Diâmetro: 1" a 4"',
       'Acabamento: Polido Sanitário',
       'Norma: 3A'
     ],
-    imageUrl: '/images/produtos/te-sanitario.jpg'
+    imageUrl: '/images/produtos/te.jpg'
   },
   {
     name: 'União SMS',

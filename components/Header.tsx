@@ -84,7 +84,7 @@ export default function Header() {
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         isScrolled 
           ? "bg-white/95 backdrop-blur-sm shadow-lg" 
-          : "bg-transparent"
+          : "bg-gray-900"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -97,7 +97,7 @@ export default function Header() {
               onMouseEnter={handleCorpMouseEnter}
               onMouseLeave={handleCorpMouseLeave}
             >
-              <button className="text-gray-700 hover:text-blue-600 px-3 py-2">
+              <button className={`px-3 py-2 ${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"}`}>
                 Empresa
               </button>
               {isCorpOpen && (
@@ -136,7 +136,7 @@ export default function Header() {
             <div className="flex items-center">
               <Link href="/" className="inline-block">
                 <Image
-                  src="/images/logo.svg"
+                  src="/images/logo.png"
                   alt="Petropipe"
                   width={160}
                   height={40}
@@ -156,7 +156,7 @@ export default function Header() {
               <Link 
                 href="/produtos" 
                 className={`group relative inline-flex items-center transition-colors duration-200
-                  ${isScrolled ? "text-gray-700 hover:text-blue-600" : "text-white hover:text-blue-200"}`}
+                  ${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"}`}
               >
                 Produtos
                 {/* Linha animada embaixo do link */}
@@ -193,7 +193,7 @@ export default function Header() {
             <Link 
               href="/sobre" 
               className={`group relative inline-flex items-center transition-colors duration-200
-                ${isScrolled ? "text-gray-700 hover:text-blue-600" : "text-white hover:text-blue-200"}`}
+                ${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"}`}
             >
               Sobre Nós
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-200" />
@@ -201,7 +201,7 @@ export default function Header() {
             <Link 
               href="/contato" 
               className={`group relative inline-flex items-center transition-colors duration-200
-                ${isScrolled ? "text-gray-700 hover:text-blue-600" : "text-white hover:text-blue-200"}`}
+                ${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"}`}
             >
               Contato
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-200" />
@@ -214,7 +214,7 @@ export default function Header() {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`p-2 rounded-full transition-colors duration-200
                 ${isScrolled 
-                  ? "text-gray-700 hover:text-blue-600 hover:bg-gray-100" 
+                  ? "text-gray-900 hover:text-blue-600 hover:bg-gray-100" 
                   : "text-white hover:text-blue-200 hover:bg-white/10"
                 }`}
             >
@@ -242,7 +242,7 @@ export default function Header() {
           <div 
             ref={menuRef}
             className={`md:hidden fixed inset-x-0 top-20 p-4 
-              ${isScrolled ? "bg-white/95" : "bg-gray-900/95"} 
+              ${isScrolled ? "bg-white/95" : "bg-gray-900"} 
               backdrop-blur-sm border-t border-gray-200/20 animate-in slide-in-from-top duration-200`}
           >
             <div className="pt-2 pb-3 space-y-1">
@@ -268,14 +268,14 @@ export default function Header() {
 
                 {isCorpMobileOpen && (
                   <div className="pl-4 animate-in slide-in-from-left duration-200">
-                    <Link href="/sobre-a-acotubo" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Sobre a Petropipe</Link>
-                    <Link href="/unidades" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Unidades</Link>
-                    <Link href="/qualidade" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Qualidade</Link>
-                    <Link href="/planos-de-financiamento" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Planos de Financiamento</Link>
-                    <Link href="/compliance-lgpd" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Compliance e LGPD</Link>
-                    <Link href="/ouvidoria" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Ouvidoria</Link>
-                    <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Blog</Link>
-                    <Link href="/trabalhe-conosco" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Trabalhe conosco</Link>
+                    <Link href="/sobre-a-acotubo" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Sobre a Petropipe</Link>
+                    <Link href="/unidades" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Unidades</Link>
+                    <Link href="/qualidade" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Qualidade</Link>
+                    <Link href="/planos-de-financiamento" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Planos de Financiamento</Link>
+                    <Link href="/compliance-lgpd" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Compliance e LGPD</Link>
+                    <Link href="/ouvidoria" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Ouvidoria</Link>
+                    <Link href="/blog" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Blog</Link>
+                    <Link href="/trabalhe-conosco" className={`${isScrolled ? "text-gray-900 hover:text-blue-600" : "text-white hover:text-blue-200"} block px-3 py-2`}>Trabalhe conosco</Link>
                   </div>
                 )}
               </div>

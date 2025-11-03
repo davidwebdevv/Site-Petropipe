@@ -1,21 +1,22 @@
 import Banner from '../components/Banner';
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Banner />
-      
+
       {/* Seção de Categorias */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-12">
-            <span className="inline-block bg-gray-600 text-white px-4 py-3 rounded-md shadow-sm border border-gray-800">
+            <span className="inline-block bg-white-100 text-gray-900 px-4 py-3 rounded-md shadow-sm">
               Nossas categorias de Produtos
             </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card Tubos */}
-            <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100">
+            <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100 transition-transform duration-300 hover:scale-105 npm">
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   TUBOS & TUBING
@@ -49,7 +50,7 @@ export default function Home() {
             </div>
 
             {/* Card Conexões */}
-            <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100">
+            <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100 transition-transform duration-300 hover:scale-105 npm">
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   CONEXÕES
@@ -80,12 +81,11 @@ export default function Home() {
                 </a>
               </div>
             </div>
-
-            {/* Card Válvulas */}
-            <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100">
+            {/* Card Flanges */}
+            <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100 transition-transform duration-300 hover:scale-105 npm">
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                 FLANGES
+                  FLANGES
                 </h3>
                 <p className="text-gray-600">
                   Flanges Pescoço, Cego, Roscado, Sobreposto,
@@ -95,6 +95,72 @@ export default function Home() {
                 </p>
                 <a
                   href="/produtos/Flanges"
+                  className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-700"
+                >
+                  Ver produtos
+                  <svg
+                    className="ml-2 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            {/* Card Forjados */}
+            <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100 transition-transform duration-300 hover:scale-105 npm">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  FORJADOS
+                </h3>
+                <p className="text-gray-600">
+                  Cotovelos, Tes, Luvas, Meia Luva, Sockolets e
+                  Forjados conforme desenho, espessuras e
+                  diâmetros tradicionais como também especiais.
+                </p>
+                <a
+                  href="/produtos/Forjados"
+                  className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-700"
+                >
+                  Ver produtos
+                  <svg
+                    className="ml-2 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            {/* Card Multitubos */}
+            <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100 transition-transform duration-300 hover:scale-105 npm">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  MULTITUBOS
+                </h3>
+                <p className="text-gray-600">
+                  Aplicação básica para a Indústria Naval.
+                  Acionamento (remoto) hidráulico / pneumático
+                  de válvulas. Economia substancial de montagem,
+                  evita soldas e repetitivos testes de linha e
+                  proteção contra corrosão por água do mar.
+                </p>
+                <a
+                  href="/produtos/Multitubos"
                   className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-700"
                 >
                   Ver produtos

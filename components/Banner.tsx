@@ -86,7 +86,7 @@ export default function Banner() {
         }
         touchStartX.current = null;
       }}
-      className="relative h-[600px] mt-28 pt-6 overflow-hidden before:absolute before:inset-x-0 before:top-0 before:h-12 before:bg-gradient-to-b before:from-gray-900/10 before:via-gray-900/5 before:to-transparent before:z-10"
+       className="relative max-w-7xl mx-auto h-[600px] mt-28 pt-6 overflow-hidden rounded-xl shadow-lg before:absolute before:inset-x-0 before:top-0 before:h-12 before:bg-gradient-to-b before:from-gray-900/10 before:via-gray-900/5 before:to-transparent before:z-10"
     >
       {/* Slides */}
       {images.map((src, i) => (

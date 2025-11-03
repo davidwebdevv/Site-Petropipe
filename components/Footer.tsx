@@ -7,7 +7,8 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Sobre Nós</h3>
             <p className="text-gray-400">
-              Especialistas em tubos e conexões de aço inox, fornecendo soluções de qualidade para a indústria.
+              Petropipe foi criada com objetivo de ser a melhor empresa de “Project Management” do mercado brasileiro, fornecendo materiais de fabricantes de qualidade comprovada e
+              reconhecida sem perder o foco nos custos competitivos
             </p>
           </div>
 
@@ -17,7 +18,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a href="/produtos/Tubos&Tubing" className="text-gray-400 hover:text-white">
-                  Tubos de Aço Inox
+                  Tubos & Tubing
                 </a>
               </li>
               <li>
@@ -27,7 +28,17 @@ export default function Footer() {
               </li>
               <li>
                 <a href="/produtos/Flanges" className="text-gray-400 hover:text-white">
-                  Válvulas
+                  Flanges
+                </a>
+              </li>
+               <li>
+                <a href="/produtos/Forjados" className="text-gray-400 hover:text-white">
+                  Forjados
+                </a>
+              </li>
+               <li>
+                <a href="/produtos/Multitubos" className="text-gray-400 hover:text-white">
+                  Multitubos
                 </a>
               </li>
             </ul>
@@ -39,7 +50,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="text-gray-400">
                 <span className="block">Telefone:</span>
-                <a href="tel:+551199999999" className="hover:text-white">
+                <a href="tel:+551145264528" className="hover:text-white">
                   (11) 4526-4528
                 </a>
               </li>

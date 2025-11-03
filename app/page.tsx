@@ -9,7 +9,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-12">
-            <span className="inline-block bg-gray-600 text-white px-45 py-3 rounded-md shadow-sm border border-gray-800">
+            <span className="inline-block bg-gray-600 text-white px-4 py-3 rounded-md shadow-sm border border-gray-800">
               Nossas categorias de Produtos
             </span>
           </h2>

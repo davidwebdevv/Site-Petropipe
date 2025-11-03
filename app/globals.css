@@ -47,6 +47,23 @@ body {
   --card-shadow: 0 6px 18px rgba(2,6,23,0.08);
 }
 
+/* Gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;  }
+
 /* Focus styles for accessibility */
 :focus {
   outline: none;
@@ -63,6 +80,10 @@ body {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-6px); }
   100% { transform: translateY(0px); }
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 .float-slow { animation: float-y 6s ease-in-out infinite; }

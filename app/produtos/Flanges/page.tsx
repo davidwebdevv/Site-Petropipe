@@ -2,8 +2,8 @@ import ProductCard from '@/components/ProductCard';
 
 const valvulasProdutos = [
   {
-    name: 'Válvula Borboleta Sanitária',
-    description: 'Válvula borboleta sanitária em aço inox para controle de fluxo',
+    name: 'Válvula Borboleta ',
+    description: 'Válvula borboleta  em aço inox para controle de fluxo',
     specifications: [
       'Material: Aço Inox 316L',
       'Diâmetro: 1" a 4"',

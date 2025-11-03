@@ -18,7 +18,7 @@ const conexoesProdutos = [
     specifications: [
       'Material: Aço Inox 316L',
       'Diâmetro: 1" a 4"',
-      'Acabamento: Polido Sanitário',
+      'Acabamento: Polido ',
       'Norma: 3A'
     ],
     imageUrl: '/images/produtos/te.jpg'

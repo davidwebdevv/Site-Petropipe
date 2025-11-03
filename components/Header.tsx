@@ -93,7 +93,7 @@ export default function Header() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="inline-block">
               <Image
-                src="/images/logo5.png"
+                src="/images/logo6.png"
                 alt="Petropipe"
                 width={160}
                 height={40}

@@ -59,15 +59,15 @@ export default function SobreAPetropipe() {
                     </div>
                     <div>
                       <dt className="text-lg font-medium text-gray-500">Clientes Atendidos</dt>
-                      <dd className="mt-2 text-3xl font-extrabold text-blue-600">Xk+</dd>
+                      <dd className="mt-2 text-3xl font-extrabold text-blue-600">1.000</dd>
                     </div>
                     <div>
                       <dt className="text-lg font-medium text-gray-500">Produtos</dt>
-                      <dd className="mt-2 text-3xl font-extrabold text-blue-600">Xk+</dd>
+                      <dd className="mt-2 text-3xl font-extrabold text-blue-600">NPS ½ até 48</dd>
                     </div>
                     <div>
                       <dt className="text-lg font-medium text-gray-500">Colaboradores</dt>
-                      <dd className="mt-2 text-3xl font-extrabold text-blue-600">X+</dd>
+                      <dd className="mt-2 text-3xl font-extrabold text-blue-600">10</dd>
                     </div>
                   </dl>
                 </div>
@@ -90,7 +90,7 @@ export default function SobreAPetropipe() {
                     <div className={`w-32 h-32 mx-auto mb-4 rounded-full ${i === 3 ? 'overflow-hidden border-2 border-blue-600 shadow-md transition-transform duration-300 hover:scale-105 hover:border-blue-400' : 'bg-gray-200'}`}>
                       {i === 3 && (
                         <Image
-                          src="/images/gestor3.png"
+                          src="/images/gestor3.PNG"
                           alt="Foto do Gestor"
                           width={128}
                           height={128}
@@ -116,9 +116,9 @@ export default function SobreAPetropipe() {
             </h2>
 
             {[
-              { name: "Stainalloy", logo: "/images/stainalloy-logo2.png", description: "Distribuidora especializada com ampla gama de produtos." },
-              { name: "CUNOVA", logo: "/images/cunova-logo.png", description: "Foco no cliente e soluções personalizadas." },
-              { name: "D’HONDT THERMAL SOLUTIONS", logo: "/images/dhondt2-logo.png", description: "Fabricante líder mundial de trocadores de calor." }
+              { name: "Stainalloy", logo: "/images/stainalloy-logo2.PNG", description: "Distribuidora especializada com ampla gama de produtos." },
+              { name: "CUNOVA", logo: "/images/cunova-logo.PNG", description: "Foco no cliente e soluções personalizadas." },
+              { name: "D HONDT THERMAL SOLUTIONS", logo: "/images/dhondt2-logo.png", description: "Fabricante líder mundial de trocadores de calor." }
             ].map((partner, idx) => (
               <div key={idx} className="bg-white shadow-xl rounded-lg overflow-hidden mb-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2">

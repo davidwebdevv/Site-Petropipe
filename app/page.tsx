@@ -1,5 +1,6 @@
 import Banner from '../components/Banner';
 import ParticlesBackground from "@/components/ParticlesBackground";
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -17,6 +18,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card Tubos */}
             <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100 transition-transform duration-300 hover:scale-105 npm">
+              <div className="w-full h-48 relative">
+                <Image
+                  src="/images/tubos/tubos.jpg"
+                  alt="Tubos&Tubing"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   TUBOS & TUBING
@@ -51,6 +59,13 @@ export default function Home() {
 
             {/* Card Conexões */}
             <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100 transition-transform duration-300 hover:scale-105 npm">
+              <div className="w-full h-48 relative">
+                <Image
+                  src="/images/conexões/conexões.jpg"
+                  alt="Conexões"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   CONEXÕES
@@ -83,6 +98,13 @@ export default function Home() {
             </div>
             {/* Card Flanges */}
             <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100 transition-transform duration-300 hover:scale-105 npm">
+              <div className="w-full h-48 relative">
+                <Image
+                  src="/images/flanges/flange1.PNG"
+                  alt="Flanges"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   FLANGES
@@ -116,6 +138,13 @@ export default function Home() {
             </div>
             {/* Card Forjados */}
             <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100 transition-transform duration-300 hover:scale-105 npm">
+              <div className="w-full h-48 relative">
+                <Image
+                  src="/images/forjados/forjados.PNG"
+                  alt="Forjados"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   FORJADOS
@@ -148,6 +177,13 @@ export default function Home() {
             </div>
             {/* Card Multitubos */}
             <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow hover:bg-gray-100 transition-transform duration-300 hover:scale-105 npm">
+              <div className="w-full h-48 relative">
+                <Image
+                  src="/images/multitubos/multitubos.jpg"
+                  alt="Multitubos"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   MULTITUBOS
@@ -183,6 +219,60 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Seção Sobre a Empresa */}
+      <section className="py-16 bg-white/70">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-12">
+            Nossa História
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-lg text-gray-600 mb-6">
+                Petropipe foi criada com objetivo de ser a melhor empresa de “Project Management” do mercado brasileiro, fornecendo
+                materiais de fabricantes de qualidade comprovada e reconhecida sem perder o foco nos custos competitivos.
+                O rigor crescente exigido pelos usuários finais nos projetos off-shore e on-shore reforça a necessidade de um parceiro confiável.
+              </p>
+              <p className="text-lg text-gray-600 mb-6">
+                Estoque no Brasil e exterior de SuperDuplex, Duplex, aço inoxidável, Aço liga, Monel, Inconel, Hastelloy, Alloy, Carbono de alta resistência mecânica e Ligas especiais resistentes a corrosão, somos Fabricantes e distribuidores de tubos, conexões, flanges, tubing, forjados e peças especiais conforme desenho.
+              </p>
+              <p className="text-lg text-gray-600 mb-6">
+                Com anos de experiência no mercado, nos especializamos no fornecimento de produtos
+                que atendem aos mais rigorosos padrões de qualidade e segurança.
+              </p>
+              <p className="text-lg text-gray-600">
+                Nossa equipe altamente capacitada está sempre pronta para oferecer o melhor
+                atendimento e soluções personalizadas para cada cliente.
+              </p>
+            </div>
+
+            <div className="lg:ml-auto">
+              <div className="bg-gray-100 p-8 rounded-lg shadow-lg">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Nossos Números</h3>
+                <dl className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                  <div>
+                    <dt className="text-lg font-medium text-gray-500">Anos no Mercado</dt>
+                    <dd className="mt-2 text-3xl font-extrabold text-blue-600">20 Anos</dd>
+                  </div>
+                  <div>
+                    <dt className="text-lg font-medium text-gray-500">Clientes Atendidos</dt>
+                    <dd className="mt-2 text-3xl font-extrabold text-blue-600">1.000</dd>
+                  </div>
+                  <div>
+                    <dt className="text-lg font-medium text-gray-500">Produtos</dt>
+                    <dd className="mt-2 text-3xl font-extrabold text-blue-600">NPS ½ até 48</dd>
+                  </div>
+                  <div>
+                    <dt className="text-lg font-medium text-gray-500">Colaboradores</dt>
+                    <dd className="mt-2 text-3xl font-extrabold text-blue-600">10</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Seção Por que nos escolher */}
       <section className="py-16 bg-gray-50">
@@ -235,6 +325,40 @@ export default function Home() {
               <p className="text-gray-600">Equipe especializada à sua disposição</p>
             </div>
           </div>
+        </div>
+      </section>
+      {/* Seção Parceiros */}
+      <section className="py-16 bg-white/70">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-12">
+            Nossos parceiros oficiais
+          </h2>
+
+          {[
+            { name: "Stainalloy", logo: "/images/stainalloy-logo2.PNG", description: "Distribuidora especializada com ampla gama de produtos." },
+            { name: "CUNOVA", logo: "/images/cunova-logo.PNG", description: "Foco no cliente e soluções personalizadas." },
+            { name: "D’HONDT THERMAL SOLUTIONS", logo: "/images/dhondt2-logo.png", description: "Fabricante líder mundial de trocadores de calor." }
+          ].map((partner, idx) => (
+            <div key={idx} className="bg-white shadow-xl rounded-lg overflow-hidden mb-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{partner.name}</h3>
+                  <p className="text-gray-600 mb-4">{partner.description}</p>
+                </div>
+                <div className="bg-white p-8 flex items-center justify-center transition-transform duration-300 hover:scale-105 npm">
+                  <div className="relative w-[200px] h-[100px]">
+                    <Image
+                      src={partner.logo}
+                      alt={`Logo ${partner.name}`}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 100vw, 200px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </main>

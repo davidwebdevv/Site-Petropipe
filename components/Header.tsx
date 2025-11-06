@@ -84,7 +84,7 @@ export default function Header() {
       className={`fixed w-full top-0 z-50 transition-all duration-500 ${isScrolled
         ? "bg-white/90 backdrop-blur-md shadow-lg border-b border-gray-200"
         : "bg-gradient-to-r from-white-100 to-gray-900 text-white"
-      }`}
+        }`}
     >
       {/* Partículas */}
       <div className="absolute inset-0 z-0 opacity-40 pointer-events-none">
@@ -99,7 +99,7 @@ export default function Header() {
               <Image
                 src="/images/logo6.png"
                 alt="Petropipe"
-                width={160}
+                width={320}
                 height={40}
                 className="object-contain"
               />
@@ -209,9 +209,11 @@ export default function Header() {
         {isMenuOpen && (
           <div
             ref={menuRef}
-            className={`md:hidden fixed inset-x-0 top-20 p-4 
-              ${isScrolled ? "bg-white/95" : "bg-gradient-to-r from-white to-gray-900"} 
-              backdrop-blur-sm border-t border-gray-200/20 animate-in slide-in-from-top duration-200`}
+            className={`md:hidden fixed inset-x-0 top-20 p-4 transition-all duration-500
+      ${isScrolled
+                ? "bg-white/90 backdrop-blur-md shadow-lg border-t border-gray-200"
+                : "bg-gradient-to-r from-white to-gray-900 text-white bg-opacity-100"
+              }`}
           >
             <div className="pt-2 pb-3 space-y-1">
               {/* Empresa */}
